@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <div id="container">
+
+
+        
+
+            <form name="calcform" method="post" action="">
+              
+                <div id="light" class="light" >
+                    <input type="text" name="viewfinder" id="viewfinder" class="hide">
+                </div>
+                
+
+                <div id="keyboard">
+
+                    <div id="functions">
+                        <input type="button" value="ON" class="on" onclick="onOff()">
+                        <input type="button" value="CE" class="ce" onclick="clearEverything()">
+                        <input type="button" value="MRC" onclick="">
+                        <input type="button" value="M-" onclick="">
+                        <input type="button" value="M+" onclick="">
+                    </div>
+
+                    <div id="numbers" onclick="desabelitar()">
+                        <input type="button" name="num7" class="num" value="7" onclick="insertNum(7)">
+                        <input type="button" name="num8" class="num" value="8" onclick="insertNum(8)">
+                        <input type="button" name="num9" class="num" value="9" onclick="insertNum(9)">
+                        <input type="button" name="num4" class="num" value="4" onclick="insertNum(4)">
+                        <input type="button" name="num5" class="num" value="5" onclick="insertNum(5)">
+                        <input type="button" name="num6" class="num" value="6" onclick="insertNum(6)">
+                        <input type="button" name="num1" class="num" value="1" onclick="insertNum(1)">
+                        <input type="button" name="num2" class="num" value="2" onclick="insertNum(2)">
+                        <input type="button" name="num3" class="num" value="3" onclick="insertNum(3)">
+                        <input type="button" name="num0" class="num" value="0" onclick="insertNum(0)">
+                        <input type="button" name="dot" class="num" value="." onclick="insertNum('.')">
+
+                    </div>
+
+                    <div id="operations">
+                        <input type="button" name="porcentagem" class="oper" value="%" onclick="porcento()">
+                        <input type="button" name="multiplicar" class="oper" value="×" onclick="vezes()">
+                        <input type="button" name="somar" class="oper, longer" value="+" class="longer" onclick="soma()">
+                        <input type="button" name="raizQuadrada" class="oper" value="√" onclick="rQuadrada()">
+                        <input type="button" name="dividir" class="oper" value="÷" onclick="divisao()">
+                        <input type="button" name="subtrair" class="oper" value="-" onclick="menos()">
+                        <input type="button" name="somar" class="oper" value="=" onclick="igual()">
+
+                    </div>
+                
+                </div>
+
+            </form>
+
+        </div>
+
+    </div>
+
+    <script src="calculator.js"></script>
+
+</body>
+
+</html>
